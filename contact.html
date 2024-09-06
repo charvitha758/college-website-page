@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <title>univversity website design - easy tuutorial</title>
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
+    </head>
+    <body>
+        <section class="sub-header">
+            <nav>
+                <a href="index.html"><img src="logo.png"></a>
+                <div class="nav-links" id="navlinks">
+                    <i class="fa fa-times" onclick="hidemenu()" ></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="course.html">COURSE</a></li>
+                        <li><a href="blog.html">BLOG</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showmenu()"></i>
+            </nav>
+            <h1>Contact us</h1>
+
+
+
+            
+        </section>
+        <!--------------- contact us------------>
+        <section class="location">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d497698.77490448696!2d77.30125374670206!3d12.954459543640922!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1670c9b44e6d%3A0xf8dfc3e8517e4fe0!2sBengaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1725540515793!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            
+        </section>
+        <section class="contact-us">
+            <div class="row">
+                <div class="contact-col">
+                    <div>
+                        <i class="fa-solid fa-house"></i>
+                        <span>
+                            <h5>XYZ road, ABC building</h5>
+                            <p>
+                                Banglore, karnataka, india
+                            </p>
+                        </span>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-phone"></i>
+                        <span>
+                            <h5>+1 0123456789</h5>
+                            <p>
+                                Monday to saturday, 10AM to 6PM
+                            </p>
+                        </span>
+                    </div>
+            
+                
+                <div>
+                    <i class="fa-regular fa-envelope"></i>
+                    <span>
+                        <h5>info@easytutorialspro.com</h5>
+                        <p>
+                            email
+                        </p>
+                    </span>
+                </div>
+                </div>
+        
+                <div class="contact-col">
+                    <form action="filehandler.php" method="post">
+                        <input type="text" name="name" placeholder="enter your name" required>
+                        <input type="email" name="email" placeholder="enter email address" required>
+                        <input type="text" name="subject" placeholder="enter your subject" required>
+                        <textarea rows="8" name="message" placeholder="message" required></textarea>
+                        <button type="submit" class="hero-btn red-btn">send message</button>
+                    </form>
+                </div>
+    </div>
+        </section>
+        
+    
+            
+            <!--------footer---------->
+            <section class="footer">
+                <h4>about us</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Eos qui, ratione unde, inventore blanditiis vel iure natus optio nostrum quam nemo, dolores eligendi eaque dolor. Numquam sed itaque iusto possimus?</p>
+                <div class="icons">
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+            
+                </div>
+
+            </section>
+
+
+
+
+
+
+
+
+
+        <!-----------javascript for toggle menu-------->
+        <script>
+            var navlinks = document.getElementById("navlinks");
+            function showmenu(){
+                navlinks.style.right = "0";
+            }
+            function hidemenu(){
+                navlinks.style.right = "-200px";
+            }
+
+        </script>
+
+    </body>
+</html>
